@@ -1,5 +1,4 @@
 import { useState, useRef } from "react";
-import Header from "../components/shared/Header";
 import checkValidData from "../components/shared/validate";
 import {
   createUserWithEmailAndPassword,
@@ -11,6 +10,7 @@ import { useDispatch } from "react-redux";
 import { addUser } from "../store/userSlice";
 import { BG_IMAGE, PROFILE_PIC } from "../components/shared/constants";
 import type { FormEvent } from "react";
+import { Header } from "../components/shared";
 
 const Login = () => {
   const [isSignedIn, setIsSignedIn] = useState<boolean | null>(null);

@@ -12,7 +12,9 @@ const PrivateRoute = ({ children }: PrivateRouteProps): JSX.Element | null => {
   const [checking, setChecking] = useState(true);
 
   useEffect(() => {
+    auth.signOut();
     const unsubscribe = onAuthStateChanged(auth, (u) => {
+      console.log("Auth State Changed", u);
       setUser(u);
       setChecking(false);
     });
