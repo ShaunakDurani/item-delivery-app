@@ -1,15 +1,15 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import {
   FaFacebookF,
   FaTwitter,
   FaInstagram,
   FaLinkedinIn,
-} from 'react-icons/fa';
-import { convertTextToURLSlug, getCategoryLink } from '../../utils/helper';
-import AppStoreLogo from '../../assets/images/app-store.webp';
-import PlayStoreLogo from '../../assets/images/play-store.webp';
-import Brands from '../../lib/data/brandsList.json';
-import Categories from '../../lib/data/categories.json';
+} from "react-icons/fa";
+import { convertTextToURLSlug, getCategoryLink } from "../../utils/helper";
+import AppStoreLogo from "../../assets/images/app-store.webp";
+import PlayStoreLogo from "../../assets/images/play-store.webp";
+import Brands from "../../lib/data/brandsList.json";
+import Categories from "../../lib/data/categories.json";
 
 type BrandLink = {
   text: string;
@@ -17,74 +17,74 @@ type BrandLink = {
 };
 
 const UsefulLinks: string[] = [
-  'About',
-  'Careers',
-  'Blog',
-  'Press',
-  'Lead',
-  'Value',
-  'Privacy',
-  'Terms',
-  'FAQs',
-  'Security',
-  'Mobile',
-  'Contact',
-  'Partner',
-  'Express',
-  'Local',
-  'Spotlight',
-  'Warehouse',
-  'Deliver',
+  "About",
+  "Careers",
+  "Blog",
+  "Press",
+  "Lead",
+  "Value",
+  "Privacy",
+  "Terms",
+  "FAQs",
+  "Security",
+  "Mobile",
+  "Contact",
+  "Partner",
+  "Express",
+  "Local",
+  "Spotlight",
+  "Warehouse",
+  "Deliver",
 ];
 
 const PaymentPartners = [
   {
-    logoName: 'mobikwik',
-    alt: 'MobikWik',
+    logoName: "mobikwik",
+    alt: "MobikWik",
   },
   {
-    logoName: 'paytm',
-    alt: 'PayTm',
+    logoName: "paytm",
+    alt: "PayTm",
   },
   {
-    logoName: 'visa',
-    alt: 'Visa',
+    logoName: "visa",
+    alt: "Visa",
   },
   {
-    logoName: 'mastercard',
-    alt: 'Mastercard',
+    logoName: "mastercard",
+    alt: "Mastercard",
   },
   {
-    logoName: 'maestro',
-    alt: 'Maestro',
+    logoName: "maestro",
+    alt: "Maestro",
   },
   {
-    logoName: 'rupay',
-    alt: 'RuPay',
+    logoName: "rupay",
+    alt: "RuPay",
   },
   {
-    logoName: 'amex',
-    alt: 'American Express',
+    logoName: "amex",
+    alt: "American Express",
   },
   {
-    logoName: 'sodex',
-    alt: 'Sodexo',
+    logoName: "sodex",
+    alt: "Sodexo",
   },
   {
-    logoName: 'bhim',
-    alt: 'BHIM UPI',
+    logoName: "bhim",
+    alt: "BHIM UPI",
   },
   {
-    logoName: '',
-    alt: 'Net Banking',
+    logoName: "",
+    alt: "Net Banking",
   },
   {
-    logoName: '',
-    alt: 'Cash on Delivery',
+    logoName: "",
+    alt: "Cash on Delivery",
   },
   {
-    logoName: '',
-    alt: 'bringIt cash',
+    logoName: "",
+    alt: "bringIt cash",
   },
 ];
 
